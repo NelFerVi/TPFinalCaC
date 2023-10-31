@@ -87,7 +87,6 @@ body {
 .contenedor .tabla,
 .contenedor .footer {
 	width: auto;
-	margin: 20;
 	padding: 20px;
 	border-radius: 10px;
 }
@@ -108,18 +107,32 @@ body {
 
 .tabla {
 	background-color: rgb(149, 172, 204);
-	
+	border: 1 solid blue;
 }
-.trh {
+
+th {
 	background-color: rgba(114, 131, 131, 0.945);
 	font-size: 1.2rem;
+	border: 2px solid black;
 }
-.tr {
+tr {
 	background-color: rgb(187, 204, 204);
 	font-size: 1.2rem;
-	border-style: solid;
-	bor
-	border-color: black;
+}
+tr p {
+	margin-left: 20px;
+}
+td {
+	width: 20%;
+	border: 1px solid black; /* Forma correcta */
+}
+iframe {
+	width: 98%;
+	height: auto;
+	border: solid grey;
+}
+td img {
+	width: 100%;
 }
 .contenedor .footer {
 	background: #5d7dc4;

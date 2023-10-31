@@ -73,7 +73,6 @@ form, .footer {
 }
 
 .contenedor .contenido {
-	font-weight: normal;
 	grid-area: contenido;
 	border: solid blue 2px;
 }
