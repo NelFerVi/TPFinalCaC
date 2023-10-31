@@ -56,12 +56,10 @@ body {
 .navh:visited {color: rgb(2, 2, 156);}
 .navh:active {background-color: green; color: white;}
 
-.contenedor .header,
-.contenedor .contenido,
-.contenedor form,
-.contenedor .footer {
+.header, .contenido,
+form, .footer {
 	width: auto;
-	margin: 20;
+	margin: 0 0 20px 0;
 	padding: 20px;
 	border-radius: 10px;
 }
