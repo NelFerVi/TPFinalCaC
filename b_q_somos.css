@@ -20,27 +20,29 @@ body {
 	grid-template-columns: 0.5fr 1fr 1fr;/* 1fr 1fr 1fr */  
 	grid-template-rows: repeat(4, auto); /* auto auto auto auto*/
 	grid-template-areas: "header header header"
-						"aside section1 section1"
-						"aside section2 section2"
-						"aside section3 section3"
-						"footer footer footer";
+			    "aside section1 section1"
+			    "aside section2 section2"
+			    "aside section3 section3"
+			    "footer footer footer";
 }
 @media screen and (max-width: 780px){
 	.contenedor {
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-areas: "header header"
-							"contenido contenido"
-							"aside1 aside2"
-							"footer footer";
+		grid-template-areas:  "header header"
+				    "aside section1"
+				    "aside section2"
+				    "aside section2"
+				    "footer footer";
 	}
 }
 @media screen and (max-width: 600px){
 	.contenedor {
 		grid-template-areas: "header"
-							"contenido"
-							"aside1"
-							"aside2"
-							"footer";
+				     "aside"
+				     "section1"
+				     "section2"
+				     "section3"
+				     "footer";
 	}
 }
 
@@ -104,31 +106,31 @@ body {
 	grid-area: header;
 }
 
-.contenedor .aside {
+.aside, .section1,
+.section2, .section3 {
 	width: auto;
 	font-weight: normal;
+	border: solid blue 2px;
+	font-size: 1.2em;
+}
+ul, p {
+	margin: 20px 0 0 40px;
+	color: rgb(19, 20, 126); 
+	font-size: 1.2em;
+}
+.aside {
 	grid-area: aside;
-	border: solid blue 2px;
 }
-.contenedor .section1 {
-	width: auto;
-	font-weight: normal;
+.section1 {
 	grid-area: section1;
-	border: solid blue 2px;
 }
-.contenedor .section2 {
-	width: auto;
-	font-weight: normal;
+.section2 {
 	grid-area: section2;
-	border: solid blue 2px;
 }
-.contenedor .section3 {
-	width: auto;
-	font-weight: normal;
+.section3 {
 	grid-area: section3;
-	border: solid blue 2px;
 }
-.contenedor .footer {
+.footer {
 	background: #5d7dc4;
 	color: #fff;
 	grid-area: footer;
