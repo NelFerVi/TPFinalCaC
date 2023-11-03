@@ -1,0 +1,17 @@
+
+
+.card{
+    width: 30%;
+    height: auto;
+    margin:10px 0;
+    border: solid 2px red;
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    border: solid 2px green;
+}
+.card-body {
+    border: solid 4px yellow;
+    width: 50%;
+}
