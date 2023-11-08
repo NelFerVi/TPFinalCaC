@@ -17,7 +17,7 @@ createApp({
   },
   async created() {
     await this.fetchData(this.url)
-    this.cargarListasDesplegables()
+    this.cargarListasDesplegables
   }
 }).mount('#app')
 
