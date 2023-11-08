@@ -34,25 +34,20 @@
         <div id="app" class="container">
             <h3>Carta de Vinos</h3>
             <br>
-            <div class="">
-                <div v-for="elemento of recipes" class="card">
-                    <div class="section1">
-                        <div class="section2">
-                            <img class="card-img" :src="elemento.image" :alt="elemento.title">
-                        </div>
-                        <div class="section3">
-                            <h4 class="card-text">Bodega: {{elemento.winery}}</h5>
-                                <p class="card-text">Clase: {{elemento.wine}}</p>
-                                <p class="card-text">Raiting promedio: {{elemento.rating.average}}</p>
-                                <p class="card-text">Opiniones: {{elemento.rating.reviews}}</p>
-                                <p class="card-text">Procedencia: {{elemento.location}}</p>
-                        </div>
-                    </div>
-                    
+            <div class="section1" v-for="elemento of recipes">
+                <div class="section2">
+                    <img class="card-img":src="elemento.image" :alt="elemento.title">
+                </div>
+                <div class="section3">
+                    <h4 class="card-text">Bodega: {{elemento.winery}}</h5>
+                        <p class="card-text">Clase: {{elemento.wine}}</p>
+                        <p class="card-text">Raiting promedio: {{elemento.rating.average}}</p>
+                        <p class="card-text">Opiniones: {{elemento.rating.reviews}}</p>
+                        <p class="card-text">Procedencia: {{elemento.location}}</p>
                 </div>
             </div>
         </div>
-
+        
         <footer class="footer">
             <nav>
                 <hr><br>
