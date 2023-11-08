@@ -83,11 +83,10 @@ body {
 .navh:active {background-color: green; color: white;}
 
 .contenedor > div, .contenedor .header,
-.contenedor .aside, .contenedor .section1,
-.contenedor .section2, .contenedor .section3,
-.contenedor article, .contenedor .footer {
+.contenedor .section1, .contenedor .section2,
+.contenedor .footer {
 	width: auto;
-	margin: 20;
+	margin: 10;
 	padding: 20px;
 	border-radius: 10px;
 }
@@ -109,6 +108,7 @@ body {
 	border: solid blue 2px;
 	display: block;
 }
+
 .section1 {
 	width: 50%;
 	font-weight: normal;
@@ -119,14 +119,18 @@ body {
 	background-color: rgba(127, 255, 212, 0.5);
 } 
 .section2 {
+	/* margin: 20px; */
 	width: 50%;
 	font-weight: normal;
 	border: solid rgb(0, 162, 255) 2px;
 	background-color: rgba(127, 187, 255, 0.5);
 }
+.section3 {
+	margin: 20px;
+}
 p {
-	/* width: 200px; */
-	margin: 5px;
+	width: 100%;
+	margin-left: 15px;
 	color: rgb(37, 4, 4); 
 	font-size: 1.2em;
 } 
