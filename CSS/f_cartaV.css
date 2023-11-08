@@ -101,14 +101,13 @@ body {
 }
 .card-img {
 	width: 350px;
-	height: 300px;
+	height: 200px;
 	border-radius: 10px;
 	object-fit: scale-down;
 }
 .container {
 	border: solid blue 2px;
 	display: block;
-
 }
 .section1 {
 	width: 50%;
